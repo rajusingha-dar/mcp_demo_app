@@ -1,0 +1,18 @@
+[project]
+name = "personal-notes-agent"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "fastapi>=0.129.0",
+    "httpx>=0.28.1",
+    "langchain>=1.2.10",
+    "langchain-mcp-adapters>=0.2.1",
+    "langchain-openai>=1.1.9",
+    "langgraph>=1.0.8",
+    "pydantic>=2.12.5",
+    "python-dotenv>=1.2.1",
+    "streamlit>=1.54.0",
+    "uvicorn>=0.41.0",
+]

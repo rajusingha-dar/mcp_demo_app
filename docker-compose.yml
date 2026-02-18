@@ -1,0 +1,12 @@
+services:
+  mcp-server:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./mcp_server/notes.json:/app/notes.json
+    environment:
+      - PYTHONUNBUFFERED=1
+    restart: unless-stopped
